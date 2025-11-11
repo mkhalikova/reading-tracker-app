@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reading-tracker-app/static/css/main.b78b0fa1.css",
+    "main.js": "/reading-tracker-app/static/js/main.31791a41.js",
+    "static/js/453.ab694a00.chunk.js": "/reading-tracker-app/static/js/453.ab694a00.chunk.js",
+    "index.html": "/reading-tracker-app/index.html",
+    "main.b78b0fa1.css.map": "/reading-tracker-app/static/css/main.b78b0fa1.css.map",
+    "main.31791a41.js.map": "/reading-tracker-app/static/js/main.31791a41.js.map",
+    "453.ab694a00.chunk.js.map": "/reading-tracker-app/static/js/453.ab694a00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b78b0fa1.css",
+    "static/js/main.31791a41.js"
+  ]
+}
