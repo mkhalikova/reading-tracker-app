@@ -1,0 +1,93 @@
+.deleteModal {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    left: 40%;
+    margin: auto;
+    background-color: white;
+    max-width: 500px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgb(21, 30, 45, 0.9);
+    visibility:hidden;
+    opacity: 0;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.deleteModal__close{
+    position: absolute;
+  top: -20px;
+  right: -20px;
+  cursor: pointer;
+
+  background-color: rgb(21, 30, 45, 0.9);
+  border: none;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  z-index: 1000000;
+  font-size: 16px;
+}
+.deleteModal__wrapper {
+    background-color: #505a71;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.deleteModal__container{
+    padding-bottom: 20px;
+}
+.deleteModal__details{
+    background-color: white;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.deleteModal__text{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.deleteModal__text.details{
+    color: black;
+}
+.deleteModal__btns{
+    display: flex;
+    justify-content: space-between;
+}
+.deleteModal__btn {
+    border-radius: 5px;
+  background-color: #505a71;
+  height: 35px;
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.deleteModal__btn.del {
+
+    background-color: tomato;
+   
+  }
+  .deleteModal__btn.del:hover{
+    transform: scale(1.05);
+  }
+  
+  
+  .deleteModal__btn.cancel:hover {
+    transform: scale(1.05); /* например */
+  }

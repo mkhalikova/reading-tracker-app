@@ -1,0 +1,11 @@
+.reading-chart{
+    width: 600pxs;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.reading-chart__title{
+    margin-left: 70px;
+
+}

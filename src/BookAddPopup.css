@@ -1,0 +1,67 @@
+.book-add-popup {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  max-height: auto;
+  margin: auto;
+  visibility: hidden;
+  overflow: hidden;
+  width: 100%;
+
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+  /* background-color: rgba(224, 222, 222, 0.9); */
+  border-radius: 10px;
+}
+
+
+.book-card-add-popup__wrapper {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  /* margin:20px; */
+  /* padding: 20px; */
+  /* background-color: white; */
+}
+.book-card-add-popup__container {
+  display: flex;
+  flex-direction: row;
+  max-height: 85vh;   /* ограничиваем высоту окна */
+  /* overflow: hidden; */
+
+  /* overflow-y: auto;   */
+}
+.book-add-popup__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  /* border: 0.5px solid #151e2d; */
+  /* background-color: white; */
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  z-index: 1000000;
+  font-size: 20px;
+}
+
+.book-add-popup__close:hover {
+  
+  background-color: rgb(21, 30, 45, 0.9);
+
+}
+
+
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}

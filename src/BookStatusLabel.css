@@ -1,0 +1,32 @@
+
+
+.book__state {
+  border-radius: 7px;
+  width: 70px;
+  height: 17px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 3px;
+  text-align: center;
+  display: block;
+}
+
+.book__state--reading {
+  color: white;
+  background-color: #151e2d;
+}
+
+.book__state--finished {
+  color: #151e2d;
+  background-color: #c5c9d0;
+}
+
+.book__state--wishlist {
+  color: white;
+  background-color: #505a71;
+}
+
+.book__state--default {
+  color: white;
+  background-color: gray;
+}

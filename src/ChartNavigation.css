@@ -1,0 +1,16 @@
+.nav-chart{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    gap: 20px;
+}
+
+.nav-chart__btn {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.nav-chart__week {
+    margin: 0;
+}

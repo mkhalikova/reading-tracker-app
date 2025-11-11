@@ -1,0 +1,21 @@
+
+.book__info {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.book__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.book__author {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
+}

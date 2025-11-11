@@ -1,0 +1,20 @@
+.book-quotes{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #151e2d;
+  padding: 10px;
+  border-radius: 5px;
+}
+.book-quotes__label {
+margin: 0;
+font-size: 14px;
+font-weight: 800;
+color: white;
+}
+
+.book-quotes__text{
+  margin: 12px 0;
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+}

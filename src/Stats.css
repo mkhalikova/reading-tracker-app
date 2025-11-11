@@ -1,0 +1,59 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+ gap: 20px;
+}
+
+.stats__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stats__wrapper{
+  display: flex;
+  flex-direction: row;
+ width: 80%;
+ justify-content: space-between;
+}
+.stats__streak{
+  background-color: #404f68;
+  color: white;
+  width: 320px;
+
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+.books-total {
+  /* margin-top: 20px; */
+  /* padding: 20px; */
+  width: 342px;
+  background-color: #404f68;
+  border-radius: 15px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.books-total__container{
+  display: flex;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content:center;
+
+}
+
+.books-total__count {
+  font-size: 32px;
+  font-weight: 700;
+}
+.books-total__text{
+  color: white;
+  font-weight: 700;
+}

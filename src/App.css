@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.app-container {
+  display: flex; /* flex для двух колонок */
+  height: 100vh; /* растянуть на всю высоту окна */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar {
+  width: 200px; /* узкая колонка */
+  background-color: #404f68;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  flex: 1; /* занимает всё оставшееся место */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* header сверху, контент снизу */
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  height: 60px; /* узкий header */
+  background-color: rgba(251, 251, 251);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+  flex: 1; /* занимает всё оставшееся место */
+  padding: 20px;
+  overflow-y: auto; /* скролл, если контента много */
+ 
 }

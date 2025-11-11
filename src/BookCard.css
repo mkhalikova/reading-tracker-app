@@ -1,0 +1,16 @@
+.book-card {
+  padding: 20px;
+  width: 233px;
+  background-color: #404f68;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05); /* Увеличивает изображение на 10% */
+  box-shadow:
+  3px 3px #c5c9d0,
+  -0.5em 0 0.9em #404f68;
+}

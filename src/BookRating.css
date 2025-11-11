@@ -1,0 +1,16 @@
+
+
+.book__rating {
+  display: flex;
+  gap: 6px;
+}
+
+.book__rating svg {
+  fill: white;              /* по умолчанию пустая */
+  stroke: #404f68;         /* обводка */
+  stroke-width: 2;
+}
+.book__rating svg.active {
+  fill: #e0ce69;
+  stroke: #404f68; 
+}

@@ -1,0 +1,18 @@
+.book-notes{
+  background-color: #151e2d;
+padding: 10px;
+border-radius: 5px;
+}
+.book-notes__label {
+margin: 0;
+font-size: 14px;
+font-weight: 800;
+color: white;
+}
+
+.book-notes__text{
+  margin: 12px 0;
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+}

@@ -1,0 +1,26 @@
+.book-annotation {
+background-color: #151e2d;
+padding: 10px;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.book-card-popup__label {
+  margin: 0;
+}
+
+.book-card-popup__descr, .book-card-popup__noted, .book-card-popup__quotes {
+  margin: 0;
+}
+.book-annotation__label{
+  font-size: 14px;
+  font-weight: 800;
+  color: white;
+}
+
+.book-annotation__descr{
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+
+}

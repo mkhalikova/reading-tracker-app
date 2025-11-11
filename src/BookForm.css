@@ -1,0 +1,233 @@
+.book-form {
+  width: 100%;
+  background-color: #404f68;
+  display: flex;
+  flex-direction: column;
+  /* max-height: 90vh;      ограничиваем высоту всей формы */
+  background-color: #404f68;
+  overflow: hidden;
+
+}
+
+.book-form__header-container {
+  background-color: #283242;
+  padding: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
+
+.book-form__header {
+
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.book-form__text {
+  margin: 15px 0 0 0;
+  color: #c5c9d0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.book-form__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;           
+  overflow-y: auto;
+  /* скролл только тут */
+  padding: 5px 24px;
+  background-color: #404f68;
+  position: relative;
+  max-height: 65vh;
+}
+
+.book-form__toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0 0 15px 0;
+}
+
+.book-form__toggle-btn:hover {
+  color: #8a8e9b;
+}
+
+.book-form__toggle-btn::before {
+  content: "▼";
+  /* по умолчанию вниз */
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+}
+
+.book-form__toggle-btn.active::before {
+  transform: rotate(180deg);
+  /* переворачиваем вверх */
+}
+
+.book-form__container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.book-form__container::-webkit-scrollbar-track {
+  background: #687188;
+  /* фон дорожки */
+
+}
+
+.book-form__container::-webkit-scrollbar-thumb {
+  background: #1f2a3d;
+  /* сам ползунок */
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-form__container::-webkit-scrollbar-thumb:hover {
+  background-color: #283242;
+  /* чуть светлее/ярче, чем основной цвет ползунка */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  /* мягкое свечение */
+}
+
+.book-form__label {
+  font-size: 14px;
+  color: white;
+}
+
+.book-form__input, .book-form__select {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #687188;
+  color: white;
+  flex-shrink: 0;
+
+}
+
+.status-select {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.status-option {
+  padding: 5px 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+  font-size: 14px;
+  color: white;
+}
+
+.status-option:hover {
+  border-color: #888;
+}
+
+.status-option.active {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.rating-select{
+  display: flex;
+  gap: 8px
+}
+.status-rating {
+  fill: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+  /* stroke-width: 0.5; */
+}
+.status-rating svg {
+  fill: white;              /* по умолчанию пустая */
+  stroke: #404f68;         /* обводка */
+
+}
+.status-rating.active {
+  fill: #e0ce69;
+  stroke: #404f68; 
+  transform: scale(1.2);
+}
+.status-rating:hover {
+  fill: #e0ce69;
+  transform: scale(1.2);
+}
+
+.book-form__decsr {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #687188;
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.book-form__submit-container {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 20px 20px;
+  background-color: #283242;
+}
+
+.book-form__submit {
+  width: 100%;
+  /* кнопка на всю ширину */
+  max-width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #151e2d;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-form__submit:hover {
+  background-color: #1e2a3d;
+  /* немного светлее */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  /* лёгкое свечение */
+}
+
+.book-form__submit:active {
+  background-color: #101722;
+  /* чуть темнее при нажатии */
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  /* уменьшаем подсветку */
+}
+
+.book-form__advanced {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  padding-top: 20px;
+ 
+}
+
+.book-form__advanced::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1.5px;
+  height: 0;                /* высота не нужна, используем border */
+  border-top: 1.5px dashed #687188; 
+}

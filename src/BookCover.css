@@ -1,0 +1,38 @@
+.book-cover__container {}
+
+.book-cover__img {
+  max-width: 100px;
+
+  display: block;
+  border-radius: 10px;
+
+  object-fit: cover;
+
+}
+
+.book-cover__stub {
+  width: 100px;
+  height: 157px;
+  background-color: #151e2d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-cover__stub-icon {}
+
+.book-cover__stub-title {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.book-cover__stub-author {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+}
