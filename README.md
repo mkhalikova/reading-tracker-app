@@ -3,7 +3,7 @@
 Простой проект для отслеживания процесса чтения книг.
 
 ## Live Demo
-Открыть проект в браузере: [https://mkhalikova.github.io/reading-tracker](https://mkhalikova.github.io/reading-tracker)
+Открыть проект в браузере: [https://mkhalikova.github.io/reading-tracker-app](https://mkhalikova.github.io/reading-tracker-app)
 
 ## Что делает проект
 - Добавление новых книг и информации о них
