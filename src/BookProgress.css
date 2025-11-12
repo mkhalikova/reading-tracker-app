@@ -18,7 +18,7 @@
 
 .progress-bar__line {
   width: 0%;
-  height: 8px;
+  height: 6px;
   background: linear-gradient(to right, #404f68, #283242);
   /* background-color: #404f68; */
   transition: width 0.3s ease;

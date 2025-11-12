@@ -1,8 +1,11 @@
 .book-annotation {
-background-color: #151e2d;
+/* background-color: #151e2d; */
+background-color: #FFF;
 padding: 10px;
 border-radius: 5px;
 margin-bottom: 20px;
+position: relative;
+display: inline-block;
 }
 
 .book-card-popup__label {
@@ -15,12 +18,24 @@ margin-bottom: 20px;
 .book-annotation__label{
   font-size: 14px;
   font-weight: 800;
-  color: white;
+  /* color: white; */
+  color: #101828;
 }
 
 .book-annotation__descr{
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 20px;
   text-align: justify;
-  color: white;
+  /* color: white; */
+  color: #101828;
 
+}
+
+.book-annotation:before { 
+content: " ";
+background: #D0D5DD;
+width: calc(100% - 20px);
+height: 1px;
+bottom: 0;
+position: absolute;
 }

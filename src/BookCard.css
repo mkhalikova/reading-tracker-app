@@ -1,7 +1,8 @@
 .book-card {
   padding: 20px;
   width: 233px;
-  background-color: #404f68;
+  /* background-color: #404f68; */
+  background-color: #FFF;
   border-radius: 15px;
   position: relative;
   cursor: pointer;

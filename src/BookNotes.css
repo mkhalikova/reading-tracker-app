@@ -1,18 +1,31 @@
 .book-notes{
-  background-color: #151e2d;
+  /* background-color: #151e2d; */
 padding: 10px;
 border-radius: 5px;
+background-color: #FFF;
+position: relative;
+display: inline-block;
+width:calc(100% - 20px);
 }
 .book-notes__label {
 margin: 0;
 font-size: 14px;
 font-weight: 800;
-color: white;
+color: #101828;
 }
 
 .book-notes__text{
   margin: 12px 0;
   font-size: 12px;
   text-align: justify;
-  color: white;
+  color: #101828;
 }
+
+.book-notes:before { 
+  content: " ";
+  background: #D0D5DD;
+  width: calc(100% - 20px);
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  }

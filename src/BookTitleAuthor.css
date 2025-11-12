@@ -8,14 +8,14 @@
 .book__title {
   font-size: 14px;
   font-weight: 600;
-  color: white;
+  color: #101828;
   margin: 0;
   padding-bottom: 10px;
 }
 
 .book__author {
   font-size: 14px;
-  color: white;
+  color: #101828;
   margin: 0;
   padding-bottom: 10px;
 }
