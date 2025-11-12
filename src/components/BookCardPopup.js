@@ -18,19 +18,21 @@ function BookCardPopup({ book, isOpen, onClose, onUpdateBook, onDelete }) {
     const handleFormSubmit = (updatedBook) => {
         onUpdateBook(updatedBook);
         setIsEditing(false);
-         onClose();
+        onClose();
     }
     const handleDeleteClick = () => {
         onDelete(book.id); // здесь setBooks вызывается корректно
         onClose(); // если нужно закрыть попап
-      };
+    };
 
     return (
         <div className={`book-card-popup ${isOpen ? "popup_opened" : ""}`}>
 
             <div className="book-card-popup__wrapper">
                 <button className="book-card-popup__close" type="button" onClick={onClose}>
-                    x
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                        <path d="M10.8333 0.833374L0.833313 10.8334M0.833313 0.833374L10.8333 10.8334" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </button>
                 {!isEditing ? (
                     <>
@@ -90,10 +92,10 @@ function BookCardPopup({ book, isOpen, onClose, onUpdateBook, onDelete }) {
                         </div>
                     </>
                 ) : (
-                    <BookForm mode="edit" 
-                    book={book} 
-                    onSubmit={handleFormSubmit} 
-                    onDelete={onDelete} />
+                    <BookForm mode="edit"
+                        book={book}
+                        onSubmit={handleFormSubmit}
+                        onDelete={onDelete} />
                 )}
             </div>
         </div>

@@ -1,127 +1,94 @@
- /* .book-card-popup {
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px;
-  max-height: auto;
-  margin: auto;
-
-  visibility: hidden;
-  overflow: hidden;
-  width: 100%;
-
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s;
-  background-color: rgba(224, 222, 222, 0.9);
-  border-radius: 10px;
-
-} 
-
-
-.book-card-popup__wrapper {
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  margin:20px;
-  padding: 20px;
-  background-color: white;
-  z-index: 1001;
-} */
-
 /* Оверлей на весь экран */
 .book-card-popup {
   position: fixed;
-  inset: 0;  
+  inset: 0;
   width: 100vw;
   height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: rgba(0, 0, 0, 0.5); /* затемнение */
-
+  background-color: rgba(0, 0, 0, 0.5);
+  /* затемнение заднего фона с карточками */
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s;
-
-  z-index: 99999; /* выше карточек */
-  pointer-events: none; /* по умолчанию клики не проходят */
+  z-index: 99999;
+  /* выше карточек */
+  pointer-events: none;
+  /* по умолчанию клики не проходят */
 }
 
 /* класс для открытия */
 .book-card-popup_opened {
   visibility: visible;
   opacity: 1;
-  pointer-events: all; /* включаем обработку кликов только при открытом попапе */
+  pointer-events: all;
+  /* включаем обработку кликов только при открытом попапе */
 }
 
 /* Содержимое попапа */
 .book-card-popup__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   width: 90%;
-  /* margin: 20px; */
-  /* padding: 20px; */
-  overflow: auto;   
-  background-color: #404f68;
-  border-radius: 10px;
+  background-color: #FFF;
+  border-radius: 16px;
+  overflow: hidden;
   z-index: 100000;
-  pointer-events: auto;  
+  pointer-events: auto;
+  /* max-height: calc(90vh - 48px); */
+  height: 80vh; 
 }
 
 .book-card-popup__header-container {
-  background-color: #283242;
+  flex: 0 0 auto;
+  background-color: #FFF;
   padding: 24px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .book-card-popup__header {
-
   margin: 0;
   font-size: 20px;
-  color: white;
+  color: #101828;
 }
 
 .book-card-popup__text {
   margin: 15px 0 0 0;
-  color: #c5c9d0;
+  color: #101828;
   font-size: 13px;
   font-weight: 700;
 }
-
 
 .book-card-popup__container {
   display: flex;
   flex-direction: row;
   gap: 20px;
   padding: 12px 24px;
-  
+  align-items: flex-start;
+  flex: 0 0 auto;
 }
+
 .book-card-popup__close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 16px;
+  padding: 0;
   cursor: pointer;
-  border: 0.5px solid #151e2d;
-  background-color: #505a71;
-  color: wheat;
-  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: #344054;
   z-index: 100001;
 }
-.book-card-popup__info{
+
+.book-card-popup__info {
   width: 100%;
 }
+
 .book-card-popup__img {
   width: 200px;
   height: auto;
-
 }
 
 .book-card-popup.popup_opened {
@@ -129,43 +96,50 @@
   opacity: 1;
 }
 
-.book-card-popup__textareas{
+.book-card-popup__textareas {
   padding: 0px 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1 1 auto;
 }
 
 .book-card-popup__btns {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-  background-color: #505a71;
+  background-color: #FFF;
   padding: 20px 24px;
-
 }
+
 .book-card-popup__btn {
   border-radius: 5px;
-  background-color: #505a71;
+  background-color: #7F56D9;
   height: 35px;
   width: 250px;
   cursor: pointer;
-  border: 1px solid white;
-  color: white;
+  border: none;
+  color: #FFF;
   font-weight: 700;
   transition: transform 0.3s ease;
 }
+
 .book-card-popup__btn.del {
+  background-color: transparent;
+  color: #101828;
 
+}
+
+.book-card-popup__btn.del:hover {
   background-color: tomato;
- 
+  color: #FFF;
 }
-.book-card-popup__btn.del:hover{
-  transform: scale(1.05);
-}
-
 
 .book-card-popup__btn.edit:hover {
-  transform: scale(1.05); /* например */
+  background-color: #9072d3;
 }
+
 .book-card-popup__label {
   margin: 0;
 }
